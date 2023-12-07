@@ -21,21 +21,22 @@ Resultados obtenidos Se creó una carpeta todo-app y en su interior se generaron
     <meta property="article:section" content="Unidad 2: Arquitectura Web :: Portfolio IAW">
     <meta property="og:site_name" content="Portfolio IAW">
     <title>Arquitectura MVC en Node.JS :: Portfolio IAW</title>
-    <link href="/images/favicon.svg?1701958914" rel="icon" type="image/svg+xml">
+    <link href="/1ertrimestre/ut2/mvcnodejs/index.xml" rel="alternate" type="application/rss+xml" title="Arquitectura MVC en Node.JS :: Portfolio IAW">
+    <link href="/images/favicon.svg?1701961904" rel="icon" type="image/svg+xml">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1701958914" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1701958914" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1701958914" rel="stylesheet">
-    <link href="/css/auto-complete.css?1701958914" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1701958914" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1701958914" rel="stylesheet">
-    <link href="/css/fonts.css?1701958914" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1701958914" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1701958914" rel="stylesheet">
-    <link href="/css/theme-relearn-auto.css?1701958914" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-auto.css?1701958914" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1701958914" rel="stylesheet">
-    <link href="/css/print.css?1701958914" rel="stylesheet" media="print">
-    <link href="/css/ie.css?1701958914" rel="stylesheet">
-    <script src="/js/url.js?1701958914"></script>
-    <script src="/js/variant.js?1701958914"></script>
+    <link href="/css/fontawesome-all.min.css?1701961904" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1701961904" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1701961904" rel="stylesheet">
+    <link href="/css/auto-complete.css?1701961904" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1701961904" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1701961904" rel="stylesheet">
+    <link href="/css/fonts.css?1701961904" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1701961904" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1701961904" rel="stylesheet">
+    <link href="/css/theme-relearn-auto.css?1701961904" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-auto.css?1701961904" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1701961904" rel="stylesheet">
+    <link href="/css/print.css?1701961904" rel="stylesheet" media="print">
+    <link href="/css/ie.css?1701961904" rel="stylesheet">
+    <script src="/js/url.js?1701961904"></script>
+    <script src="/js/variant.js?1701961904"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -143,41 +144,41 @@ Resultados obtenidos Se creó una carpeta todo-app y en su interior se generaron
     server.js
 </code></pre>
 
-<div class="tab-panel" data-tab-group="c67a91ab31a5c0abcb5ef984e0f2b585">
+<div class="tab-panel" data-tab-group="b0f1a754b51af2550634a247568688b6">
   <div class="tab-nav">
     <div class="tab-nav-title">Contenido de los archivos <strong>.js</strong> y <strong>.ejs</strong></div>
     <button
       data-tab-item="taskmodeljs"
       class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
-      onclick="switchTab('c67a91ab31a5c0abcb5ef984e0f2b585','taskmodeljs')"
+      onclick="switchTab('b0f1a754b51af2550634a247568688b6','taskmodeljs')"
     >
       <span class="tab-nav-text">taskModel.js</span>
     </button>
     <button
       data-tab-item="indexejs"
       class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('c67a91ab31a5c0abcb5ef984e0f2b585','indexejs')"
+      onclick="switchTab('b0f1a754b51af2550634a247568688b6','indexejs')"
     >
       <span class="tab-nav-text">index.ejs</span>
     </button>
     <button
       data-tab-item="addejs"
       class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('c67a91ab31a5c0abcb5ef984e0f2b585','addejs')"
+      onclick="switchTab('b0f1a754b51af2550634a247568688b6','addejs')"
     >
       <span class="tab-nav-text">add.ejs</span>
     </button>
     <button
       data-tab-item="taskcontrollerjs"
       class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('c67a91ab31a5c0abcb5ef984e0f2b585','taskcontrollerjs')"
+      onclick="switchTab('b0f1a754b51af2550634a247568688b6','taskcontrollerjs')"
     >
       <span class="tab-nav-text">taskController.js</span>
     </button>
     <button
       data-tab-item="serverjs"
       class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('c67a91ab31a5c0abcb5ef984e0f2b585','serverjs')"
+      onclick="switchTab('b0f1a754b51af2550634a247568688b6','serverjs')"
     >
       <span class="tab-nav-text">server.js</span>
     </button>
@@ -294,7 +295,8 @@ Resultados obtenidos Se creó una carpeta todo-app y en su interior se generaron
       <div id="R-header-topbar" class="default-animation"></div>
       <div id="R-header-wrapper" class="default-animation">
         <div id="R-header" class="default-animation">
-<a href="/"><img src="./images/logo.png" alt="logo" style="width:180px;height:180px;"></a>
+<a href="/"><img src="/images/logo.png" alt="logo" height="180px" width="180px"></a>
+
         </div>
         <form action="/search.html" method="get"><div class="searchbox default-animation">
           <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
@@ -305,12 +307,12 @@ Resultados obtenidos Se creó una carpeta todo-app y en su interior se generaron
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1701958914" defer></script>
-        <script src="/js/lunr/lunr.min.js?1701958914" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1701958914" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1701958914" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1701958914" defer></script>
-        <script src="/js/search.js?1701958914" defer></script>
+        <script src="/js/auto-complete.js?1701961904" defer></script>
+        <script src="/js/lunr/lunr.min.js?1701961904" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1701961904" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1701961904" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1701961904" defer></script>
+        <script src="/js/search.js?1701961904" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation homelinks">
         <ul>
@@ -412,8 +414,8 @@ Resultados obtenidos Se creó una carpeta todo-app y en su interior se generaron
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1701958914" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1701958914" defer></script>
-    <script src="/js/theme.js?1701958914" defer></script>
+    <script src="/js/clipboard.min.js?1701961904" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1701961904" defer></script>
+    <script src="/js/theme.js?1701961904" defer></script>
   </body>
 </html>
