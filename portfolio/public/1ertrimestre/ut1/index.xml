@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Unidad 1: Introducción a las Aplicaciones Web on Portfolio IAW</title>
+    <link>https://portfolioiaw.onrender.com/1ertrimestre/ut1/index.html</link>
+    <description>Recent content in Unidad 1: Introducción a las Aplicaciones Web on Portfolio IAW</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://portfolioiaw.onrender.com/1ertrimestre/ut1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Museo Virtual</title>
+      <link>https://portfolioiaw.onrender.com/1ertrimestre/ut1/museovirtual/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://portfolioiaw.onrender.com/1ertrimestre/ut1/museovirtual/index.html</guid>
+      <description>Descripción de la práctica Objetivo de la práctica El objetivo fue para ver un poco la historia de las aplicaciones y realizar un trabajo sobre ello de manera diferente.
+Procedimientos seguidos Las intrucciones que había en el sitio web y el contenido según lo indicado en la práctica.
+Resultados obtenidos IBM por los años Conclusiones Interesante la historía y como ha evolucionado, también interesante la aplicación web que usamos, ya que permte crear y emular un museo en 3D.</description>
+    </item>
+    <item>
+      <title>HUGO Framework</title>
+      <link>https://portfolioiaw.onrender.com/1ertrimestre/ut1/hugo/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://portfolioiaw.onrender.com/1ertrimestre/ut1/hugo/index.html</guid>
+      <description> </description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nodejs on Portfolio IAW</title>
+    <link>https://portfolioiaw.onrender.com/tags/nodejs/index.html</link>
+    <description>Recent content in nodejs on Portfolio IAW</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://portfolioiaw.onrender.com/tags/nodejs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Arquitectura MVC en Node.JS</title>
+      <link>https://portfolioiaw.onrender.com/1ertrimestre/ut2/mvcnodejs/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://portfolioiaw.onrender.com/1ertrimestre/ut2/mvcnodejs/index.html</guid>
+      <description>Descripción de la práctica Objetivo de la práctica El objetivo fue crear una Arquitectura MVC con Node.JS.
+Procedimientos seguidos Las intrucciones que nos indicó el profesor y el manual asignado a la práctica.
+Resultados obtenidos Se creó una carpeta todo-app y en su interior se generaron directorios al ejecutar el comando npm init -y y el comando npm install express ejs de Node.JS y se creó a continuación la siguiente estructura:</description>
+    </item>
+    <item>
+      <title>Ejercicios de Iniciación a Node.JS</title>
+      <link>https://portfolioiaw.onrender.com/1ertrimestre/ut4/nodejs/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://portfolioiaw.onrender.com/1ertrimestre/ut4/nodejs/index.html</guid>
+      <description>Descripción de la práctica Objetivo de la práctica Iniciación y aprendizaje de conceptos básicos de Node.JS creando Proyectos.
+Procedimientos seguidos Se siguieron las instrucciones indicadas por el profesor y se fueron realizando los ejercicos en clase.
+Resultados obtenidos Ejercicios Node.JS Ejercicios Node.JS Node.js/servidor.js = Servidor + Ficheros ProjectoNodeJS/app.js = Node.JS ProjectoNodeJS2/app.js = Express JS //node NombreDelArchivo.js para poner el servidor en marcha //crear una constatnte para que llame a la librería del modulo http y fs const http = require(&amp;#39;http&amp;#39;); const fs = require(&amp;#39;fs&amp;#39;); //Creamos un log de consola console.</description>
+    </item>
+  </channel>
+</rss>

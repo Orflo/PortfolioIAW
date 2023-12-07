@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1ertrimestre on Portfolio IAW</title>
+    <link>https://portfolioiaw.onrender.com/tags/1ertrimestre/index.html</link>
+    <description>Recent content in 1ertrimestre on Portfolio IAW</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://portfolioiaw.onrender.com/tags/1ertrimestre/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1er Trimestre IAW</title>
+      <link>https://portfolioiaw.onrender.com/1ertrimestre/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://portfolioiaw.onrender.com/1ertrimestre/index.html</guid>
+      <description>Aqui podremos ver las actividades realizadas durante el primer trimestre, organizadas cronologicamente y agrupandolas según el contenido que hay en ellas.</description>
+    </item>
+    <item>
+      <title>Unidad 1: Introducción a las Aplicaciones Web</title>
+      <link>https://portfolioiaw.onrender.com/1ertrimestre/ut1/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://portfolioiaw.onrender.com/1ertrimestre/ut1/index.html</guid>
+      <description> </description>
+    </item>
+    <item>
+      <title>Unidad 2: Arquitectura Web</title>
+      <link>https://portfolioiaw.onrender.com/1ertrimestre/ut2/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://portfolioiaw.onrender.com/1ertrimestre/ut2/index.html</guid>
+      <description> </description>
+    </item>
+    <item>
+      <title>Unidad 3: Servidores Web</title>
+      <link>https://portfolioiaw.onrender.com/1ertrimestre/ut3/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://portfolioiaw.onrender.com/1ertrimestre/ut3/index.html</guid>
+      <description> </description>
+    </item>
+    <item>
+      <title>Unidad 4: Desarrollo Backend</title>
+      <link>https://portfolioiaw.onrender.com/1ertrimestre/ut4/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://portfolioiaw.onrender.com/1ertrimestre/ut4/index.html</guid>
+      <description> </description>
+    </item>
+    <item>
+      <title>Museo Virtual</title>
+      <link>https://portfolioiaw.onrender.com/1ertrimestre/ut1/museovirtual/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://portfolioiaw.onrender.com/1ertrimestre/ut1/museovirtual/index.html</guid>
+      <description>Descripción de la práctica Objetivo de la práctica El objetivo fue para ver un poco la historia de las aplicaciones y realizar un trabajo sobre ello de manera diferente.
+Procedimientos seguidos Las intrucciones que había en el sitio web y el contenido según lo indicado en la práctica.
+Resultados obtenidos IBM por los años Conclusiones Interesante la historía y como ha evolucionado, también interesante la aplicación web que usamos, ya que permte crear y emular un museo en 3D.</description>
+    </item>
+    <item>
+      <title>HUGO Framework</title>
+      <link>https://portfolioiaw.onrender.com/1ertrimestre/ut1/hugo/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://portfolioiaw.onrender.com/1ertrimestre/ut1/hugo/index.html</guid>
+      <description> </description>
+    </item>
+    <item>
+      <title>Creación Site con HUGO</title>
+      <link>https://portfolioiaw.onrender.com/1ertrimestre/ut1/hugo/creacionsitehugo/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://portfolioiaw.onrender.com/1ertrimestre/ut1/hugo/creacionsitehugo/index.html</guid>
+      <description>Descripción de la práctica Objetivo de la práctica Creación de una página web estatica, que son mucho más eficientes y rápidas usando un framework, cosa que facilita la creación de la misma.
+Procedimientos seguidos Se han seguido las indicaciones de la documentación adjuntada, y cuando era necesario, se ha seguido la documentación del tema que se ha elegido.
+Resultados obtenidos Despliegue en 000webhostapp Conclusiones A veces es mucho más eficiente y más rápido de desarrollar una página con un framework para mostrarse al cliente que hacerla desde 0.</description>
+    </item>
+    <item>
+      <title>Despliegue HUGO en Plataformas</title>
+      <link>https://portfolioiaw.onrender.com/1ertrimestre/ut1/hugo/desplieguesitehugo/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://portfolioiaw.onrender.com/1ertrimestre/ut1/hugo/desplieguesitehugo/index.html</guid>
+      <description>Descripción de la práctica Desplegar la página creada en Hugo en diferentes sites.
+Objetivo de la práctica Demostrar que hay diferentes metodos de despliegue de páginas en diferentes plataformas.
+Procedimientos seguidos Los indicados para cada caso, en Surge.sh se han seguido las indicaciones del profesor, y en Render se han seguido las indicaciones de la página, esta última ha requerido de subur la página a GitHub.
+Resultados obtenidos Despliegue con Surge.</description>
+    </item>
+    <item>
+      <title>Canva MVC</title>
+      <link>https://portfolioiaw.onrender.com/1ertrimestre/ut2/camvamvc/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://portfolioiaw.onrender.com/1ertrimestre/ut2/camvamvc/index.html</guid>
+      <description>Descripción de la práctica Objetivo de la práctica El objetivo fue para entender el MVC de Arquitectura Web, consistía en realizar un Canva para resumir los conceptos sobre la arquitectura.
+Procedimientos seguidos Las intrucciones que nos indicó el profesor y luego la búsqueda de un Canva que se adecuara a lo que se pedía.
+Resultados obtenidos Canva del Modelo MVC Conclusiones Ayudó a entender la Arquitectura MVC de forma simple y sencilla.</description>
+    </item>
+    <item>
+      <title>Arquitectura MVC en Node.JS</title>
+      <link>https://portfolioiaw.onrender.com/1ertrimestre/ut2/mvcnodejs/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://portfolioiaw.onrender.com/1ertrimestre/ut2/mvcnodejs/index.html</guid>
+      <description>Descripción de la práctica Objetivo de la práctica El objetivo fue crear una Arquitectura MVC con Node.JS.
+Procedimientos seguidos Las intrucciones que nos indicó el profesor y el manual asignado a la práctica.
+Resultados obtenidos Se creó una carpeta todo-app y en su interior se generaron directorios al ejecutar el comando npm init -y y el comando npm install express ejs de Node.JS y se creó a continuación la siguiente estructura:</description>
+    </item>
+    <item>
+      <title>Tipos de Instalación, Migración y Despliegue de aplicaciones web en PHP</title>
+      <link>https://portfolioiaw.onrender.com/1ertrimestre/ut3/instmigdespappwebphp/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://portfolioiaw.onrender.com/1ertrimestre/ut3/instmigdespappwebphp/index.html</guid>
+      <description>Descripción de la práctica Objetivo de la práctica Instalación de un WordPress en un servidor de Apache de XAMPP de forma visual y por comandos, y la realización de una migración del mismo con un compañero y ver los resultados.
+Procedimientos seguidos Los procediemtos que se siguieron fueron los indicados en la práctica, y los manuales que se adjuntaron en ella.
+Resultados obtenidos Instalación de CMS en XAMPP-APACHE-MARIADB Migración WordPress Instalación de WordPress por Comandos Conclusiones Es un proceso que puede ser complicado, pero con una buena guía y sentido común, se pueden solucionar los problemas que uno se pueda encontrar.</description>
+    </item>
+    <item>
+      <title>Configuración Virtual Host en Apache</title>
+      <link>https://portfolioiaw.onrender.com/1ertrimestre/ut3/virtualhostapache/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://portfolioiaw.onrender.com/1ertrimestre/ut3/virtualhostapache/index.html</guid>
+      <description>Descripción de la práctica Objetivo de la práctica Creación de un Host Virtual en el equipo local para el despliegue de aplicaciones web.
+Procedimientos seguidos Se han seguido las indicaciones dadas en la práctica y en el enlace adjunto.
+Resultados obtenidos Archivos que se modificaron Fichero host de Windows httpd-vhosts.conf 127.0.0.1 miproyecto.local.com NameVirtualHost *&amp;lt;VirtualHost *&amp;gt;DocumentRoot &amp;#34;C:\xampp\htdocs&amp;#34;ServerName localhost&amp;lt;/VirtualHost&amp;gt;&amp;lt;VirtualHost *&amp;gt;DocumentRoot &amp;#34;C:\miproyecto\httpdocs&amp;#34;ServerName miproyecto.local.com&amp;lt;Directory &amp;#34;C:\miproyecto\httpdocs&amp;#34;&amp;gt;Require all granted&amp;lt;/Directory&amp;gt;&amp;lt;/VirtualHost&amp;gt; Host Virtual en Apache Conclusiones A veces no es necesario utilizar un host online para ver como quedaría una página web.</description>
+    </item>
+    <item>
+      <title>HTTPS</title>
+      <link>https://portfolioiaw.onrender.com/1ertrimestre/ut3/https/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://portfolioiaw.onrender.com/1ertrimestre/ut3/https/index.html</guid>
+      <description> </description>
+    </item>
+    <item>
+      <title>Instalar Apache en Ubuntu y Ver la Seguridad 1/2</title>
+      <link>https://portfolioiaw.onrender.com/1ertrimestre/ut3/https/p1apacheubuntu/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://portfolioiaw.onrender.com/1ertrimestre/ut3/https/p1apacheubuntu/index.html</guid>
+      <description>Descripción de la práctica Objetivo de la práctica Instalación de un Apache en Ubuntu con PHP para comprobar la seguridad con WireShark en HTTP.
+Procedimientos seguidos Se sigueron las intrucciones indicadas en la práctica y el enlace adjunto a esta.
+Resultados obtenidos Apache en Ubuntu con PHP Conclusiones Dió un buen entendimiento de lo importante que es usar protocolos seguros, ya que sin ellos la información queda expuesta, incluso si usamos el método POST en HTML.</description>
+    </item>
+    <item>
+      <title>Instalar HTTPS 2/2</title>
+      <link>https://portfolioiaw.onrender.com/1ertrimestre/ut3/https/p2https/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://portfolioiaw.onrender.com/1ertrimestre/ut3/https/p2https/index.html</guid>
+      <description>Descripción de la práctica Objetivo de la práctica Instalación de HTTPS en el servidor anterior y su configuración, comprobación de que funcione y de que con WireShark no se puede ver la información que se envía.
+Procedimientos seguidos Se sigueron las intrucciones indicadas en el enlace adjunto.
+Resultados obtenidos HTTPS en Apache en Ubuntu con PHP Conclusiones Dió un buen entendimiento de lo importante que es usar protocolos seguros. Siempre hay que usar HTTPS a la hora de ralizar un despliegue.</description>
+    </item>
+    <item>
+      <title>Configuración de un Proxy Inverso en Apache</title>
+      <link>https://portfolioiaw.onrender.com/1ertrimestre/ut3/proxyinversoyexamen/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://portfolioiaw.onrender.com/1ertrimestre/ut3/proxyinversoyexamen/index.html</guid>
+      <description>Descripción de la práctica Objetivo de la práctica Con un servidor Apache en Ubuntu y XAMPP en Windows, crear un proxy inverso que al acceder a la dirección local en windows nos redirija a la página en el Apache de Ubuntu.
+Procedimientos seguidos Se sigueron las intrucciones indicadas en el enlace adjunto.
+Resultados obtenidos En este caso, se adjuntan los resultados del examen, ya que combinan las prácticas anteriores y esta:</description>
+    </item>
+    <item>
+      <title>Laboratorio de Git</title>
+      <link>https://portfolioiaw.onrender.com/1ertrimestre/ut4/gitlab/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://portfolioiaw.onrender.com/1ertrimestre/ut4/gitlab/index.html</guid>
+      <description>Descripción de la práctica Objetivo de la práctica Iniciación y aprendizaje de Git para entender el uso en el mundo del desarollo. En esta práctica se agruparan todas las que se han realizado, ya que se ha trabajo siempre sobre la principal.
+Procedimientos seguidos Se siguieron las intrucciones dadas en clase y luego las indicadas en el laboratorio de Git subido por el Profesor.
+Resultados obtenidos Se entendió como crear un repositorio, asociarlo y realizar los comandos principales de Git, también se comprendió lo fácil que puede ser volver a una versión anterior y crear una nueva rama, y los problemas que conlleva realizar un merge de esa rama con la principal.</description>
+    </item>
+    <item>
+      <title>Ejercicios de Iniciación a JavaScript</title>
+      <link>https://portfolioiaw.onrender.com/1ertrimestre/ut4/javascript/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://portfolioiaw.onrender.com/1ertrimestre/ut4/javascript/index.html</guid>
+      <description>Descripción de la práctica Objetivo de la práctica Iniciación y aprendizaje de conceptos básicos de JavaScript.
+Procedimientos seguidos Se siguieron las instrucciones indicadas por el profesor y se fueron realizando los ejercicos en clase y en casa.
+Resultados obtenidos Ejercicios Realizados en Clase y en Casa Ejercicios JavaScript ejemplo.html/Calculadora EjerciciosClaseJS1.html EjerciciosJS.html &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt; &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.0&amp;#34;&amp;gt; &amp;lt;title&amp;gt;Calculadora&amp;lt;/title&amp;gt; &amp;lt;script&amp;gt; var num1 = parseInt(prompt (&amp;#34;numero 1&amp;#34;)); var num2 = parseInt(prompt (&amp;#34;numero 2&amp;#34;)); //metodo sumar function sumar () { return num1+num2; } //metodo resta function resta () { return num1-num2; } //metodo mult function mult() { return num1*num2; } //metodo div function div () { return num1/num2; } &amp;lt;/script&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;input type=&amp;#34;button&amp;#34; onclick=&amp;#34;alert(sumar(num1,num2))&amp;#34; value=&amp;#34;sumar&amp;#34;&amp;gt; &amp;lt;input type=&amp;#34;button&amp;#34; onclick=&amp;#34;alert(resta(num1,num2))&amp;#34; value=&amp;#34;restar&amp;#34;&amp;gt; &amp;lt;input type=&amp;#34;button&amp;#34; onclick=&amp;#34;alert(div(num1,num2))&amp;#34; value=&amp;#34;dividir&amp;#34;&amp;gt; &amp;lt;input type=&amp;#34;button&amp;#34; onclick=&amp;#34;alert(mult(num1,num2))&amp;#34; value=&amp;#34;multiplicar&amp;#34;&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; &amp;lt;!</description>
+    </item>
+    <item>
+      <title>Ejercicios de Iniciación a Node.JS</title>
+      <link>https://portfolioiaw.onrender.com/1ertrimestre/ut4/nodejs/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://portfolioiaw.onrender.com/1ertrimestre/ut4/nodejs/index.html</guid>
+      <description>Descripción de la práctica Objetivo de la práctica Iniciación y aprendizaje de conceptos básicos de Node.JS creando Proyectos.
+Procedimientos seguidos Se siguieron las instrucciones indicadas por el profesor y se fueron realizando los ejercicos en clase.
+Resultados obtenidos Ejercicios Node.JS Ejercicios Node.JS Node.js/servidor.js = Servidor + Ficheros ProjectoNodeJS/app.js = Node.JS ProjectoNodeJS2/app.js = Express JS //node NombreDelArchivo.js para poner el servidor en marcha //crear una constatnte para que llame a la librería del modulo http y fs const http = require(&amp;#39;http&amp;#39;); const fs = require(&amp;#39;fs&amp;#39;); //Creamos un log de consola console.</description>
+    </item>
+  </channel>
+</rss>

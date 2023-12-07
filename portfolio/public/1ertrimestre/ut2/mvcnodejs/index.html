@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.118.2">
+    <meta name="generator" content="Relearn 5.23.2+tip">
+    <meta name="description" content="">
+    <meta name="author" content="Lucas Antonelli">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Arquitectura MVC en Node.JS :: Portfolio IAW">
+    <meta name="twitter:description" content="Descripción de la práctica Objetivo de la práctica El objetivo fue crear una Arquitectura MVC con Node.JS.
+Procedimientos seguidos Las intrucciones que nos indicó el profesor y el manual asignado a la práctica.
+Resultados obtenidos Se creó una carpeta todo-app y en su interior se generaron directorios al ejecutar el comando npm init -y y el comando npm install express ejs de Node.JS y se creó a continuación la siguiente estructura:">
+    <meta property="og:title" content="Arquitectura MVC en Node.JS :: Portfolio IAW">
+    <meta property="og:description" content="Descripción de la práctica Objetivo de la práctica El objetivo fue crear una Arquitectura MVC con Node.JS.
+Procedimientos seguidos Las intrucciones que nos indicó el profesor y el manual asignado a la práctica.
+Resultados obtenidos Se creó una carpeta todo-app y en su interior se generaron directorios al ejecutar el comando npm init -y y el comando npm install express ejs de Node.JS y se creó a continuación la siguiente estructura:">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://portfolioiaw.onrender.com/1ertrimestre/ut2/mvcnodejs/index.html">
+    <meta property="article:section" content="Unidad 2: Arquitectura Web :: Portfolio IAW">
+    <meta property="og:site_name" content="Portfolio IAW">
+    <title>Arquitectura MVC en Node.JS :: Portfolio IAW</title>
+    <link href="/images/favicon.svg?1701958914" rel="icon" type="image/svg+xml">
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/css/fontawesome-all.min.css?1701958914" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1701958914" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1701958914" rel="stylesheet">
+    <link href="/css/auto-complete.css?1701958914" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1701958914" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1701958914" rel="stylesheet">
+    <link href="/css/fonts.css?1701958914" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1701958914" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1701958914" rel="stylesheet">
+    <link href="/css/theme-relearn-auto.css?1701958914" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-auto.css?1701958914" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1701958914" rel="stylesheet">
+    <link href="/css/print.css?1701958914" rel="stylesheet" media="print">
+    <link href="/css/ie.css?1701958914" rel="stylesheet">
+    <script src="/js/url.js?1701958914"></script>
+    <script src="/js/variant.js?1701958914"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="/index.search.js";
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      window.relearn = window.relearn || {};
+      window.relearn.baseUriFull='https:\/\/portfolioiaw.onrender.com/';
+      // variant stuff
+      window.relearn.themeVariantModifier='';
+      window.variants && variants.init( [ 'relearn-auto', 'relearn-light', 'relearn-dark', 'relearn-bright', 'zen-auto', 'zen-light', 'zen-dark', 'neon', 'learn', 'blue', 'green', 'red' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/1ertrimestre/ut2/mvcnodejs/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"><nav class="TableOfContents">
+  <ul>
+    <li><a href="#descripción-de-la-práctica">Descripción de la práctica</a>
+      <ul>
+        <li><a href="#objetivo-de-la-práctica">Objetivo de la práctica</a></li>
+        <li><a href="#procedimientos-seguidos">Procedimientos seguidos</a></li>
+        <li><a href="#resultados-obtenidos">Resultados obtenidos</a></li>
+        <li><a href="#conclusiones">Conclusiones</a></li>
+        <li><a href="#proyección-de-la-practica">Proyección de la practica</a></li>
+        <li><a href="#reflexión-personal">Reflexión personal</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/1ertrimestre/index.html"><span itemprop="name">1er Trimestre IAW</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/1ertrimestre/ut2/index.html"><span itemprop="name">Unidad 2: Arquitectura Web</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Arquitectura MVC en Node.JS</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/1ertrimestre/ut2/camvamvc/index.html" title="Canva MVC (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/1ertrimestre/ut3/index.html" title="Unidad 3: Servidores Web (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+<div class=" taxonomy-tags term-list cstyle  tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <ul>
+    <li><a class="term-link" href="/tags/1ertrimestre/index.html">1ertrimestre</a></li>
+    <li><a class="term-link" href="/tags/mvc/index.html">mvc</a></li>
+    <li><a class="term-link" href="/tags/nodejs/index.html">nodejs</a></li>
+    <li><a class="term-link" href="/tags/ut2/index.html">ut2</a></li>
+  </ul>
+</div>
+            </header>
+<h1 id="arquitectura-mvc-en-nodejs">Arquitectura MVC en Node.JS</h1>
+
+<hr>
+<h2 id="descripción-de-la-práctica">Descripción de la práctica</h2>
+<h3 id="objetivo-de-la-práctica">Objetivo de la práctica</h3>
+<p>El objetivo fue crear una <strong>Arquitectura MVC</strong> con <strong>Node.JS</strong>.</p>
+<h3 id="procedimientos-seguidos">Procedimientos seguidos</h3>
+<p>Las intrucciones que nos indicó el profesor y el manual asignado a la práctica.</p>
+<h3 id="resultados-obtenidos">Resultados obtenidos</h3>
+<p>Se creó una carpeta todo-app y en su interior se generaron directorios al ejecutar el comando <code>npm init -y</code> y el comando <code>npm install express ejs</code> de <strong>Node.JS</strong> y se creó a continuación la siguiente estructura:</p>
+<pre><code>/todo-app
+    /models
+        taskModel.js
+    /views
+        index.ejs
+        add.ejs
+    /controllers
+        taskController.js
+    server.js
+</code></pre>
+
+<div class="tab-panel" data-tab-group="c67a91ab31a5c0abcb5ef984e0f2b585">
+  <div class="tab-nav">
+    <div class="tab-nav-title">Contenido de los archivos <strong>.js</strong> y <strong>.ejs</strong></div>
+    <button
+      data-tab-item="taskmodeljs"
+      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
+      onclick="switchTab('c67a91ab31a5c0abcb5ef984e0f2b585','taskmodeljs')"
+    >
+      <span class="tab-nav-text">taskModel.js</span>
+    </button>
+    <button
+      data-tab-item="indexejs"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('c67a91ab31a5c0abcb5ef984e0f2b585','indexejs')"
+    >
+      <span class="tab-nav-text">index.ejs</span>
+    </button>
+    <button
+      data-tab-item="addejs"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('c67a91ab31a5c0abcb5ef984e0f2b585','addejs')"
+    >
+      <span class="tab-nav-text">add.ejs</span>
+    </button>
+    <button
+      data-tab-item="taskcontrollerjs"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('c67a91ab31a5c0abcb5ef984e0f2b585','taskcontrollerjs')"
+    >
+      <span class="tab-nav-text">taskController.js</span>
+    </button>
+    <button
+      data-tab-item="serverjs"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('c67a91ab31a5c0abcb5ef984e0f2b585','serverjs')"
+    >
+      <span class="tab-nav-text">server.js</span>
+    </button>
+  </div>
+  <div class="tab-content-container">
+    <div
+      data-tab-item="taskmodeljs"
+      class="tab-content tab-panel-style cstyle initial active">
+      <div class="tab-content-text">
+
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">tasks</span> <span style="color:#f92672">=</span> []; <span style="color:#75715e">// Simulando base de datos con un array
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">exports</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">getAll</span><span style="color:#f92672">:</span> () =&gt; <span style="color:#a6e22e">tasks</span>,
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">add</span><span style="color:#f92672">:</span> (<span style="color:#a6e22e">task</span>) =&gt; <span style="color:#a6e22e">tasks</span>.<span style="color:#a6e22e">push</span>(<span style="color:#a6e22e">task</span>),
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">delete</span><span style="color:#f92672">:</span> (<span style="color:#a6e22e">index</span>) =&gt; <span style="color:#a6e22e">tasks</span>.<span style="color:#a6e22e">splice</span>(<span style="color:#a6e22e">index</span>, <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>};</span></span></code></pre></div></div>
+    </div>
+    <div
+      data-tab-item="indexejs"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- index.ejs --&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">h1</span>&gt;Tasks&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">ul</span>&gt;
+</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">&lt;</span>% tasks.forEach((task, index) =&gt; { %&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>            <span style="color:#960050;background-color:#1e0010">&lt;</span>%= task %&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/delete/&lt;%= index %&gt;&#34;</span>&gt;Delete&lt;/<span style="color:#f92672">a</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">&lt;</span>% }); %&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">ul</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/add&#34;</span>&gt;Add Task&lt;/<span style="color:#f92672">a</span>&gt;</span></span></code></pre></div></div>
+    </div>
+    <div
+      data-tab-item="addejs"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- add.ejs --&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">h1</span>&gt;Add Task&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">form</span> <span style="color:#a6e22e">action</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/add&#34;</span> <span style="color:#a6e22e">method</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;task&#34;</span> <span style="color:#a6e22e">required</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;submit&#34;</span>&gt;Add&lt;/<span style="color:#f92672">button</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">form</span>&gt;</span></span></code></pre></div></div>
+    </div>
+    <div
+      data-tab-item="taskcontrollerjs"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">express</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;express&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">router</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">express</span>.<span style="color:#a6e22e">Router</span>();
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">taskModel</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;../models/taskModel&#39;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">router</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;/&#39;</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">tasks</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">taskModel</span>.<span style="color:#a6e22e">getAll</span>();
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">render</span>(<span style="color:#e6db74">&#39;index&#39;</span>, { <span style="color:#a6e22e">tasks</span> });
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">router</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;/add&#39;</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">render</span>(<span style="color:#e6db74">&#39;add&#39;</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">router</span>.<span style="color:#a6e22e">post</span>(<span style="color:#e6db74">&#39;/add&#39;</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">taskModel</span>.<span style="color:#a6e22e">add</span>(<span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">task</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">redirect</span>(<span style="color:#e6db74">&#39;/&#39;</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">router</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;/delete/:id&#39;</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">taskModel</span>.<span style="color:#66d9ef">delete</span>(<span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">id</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">redirect</span>(<span style="color:#e6db74">&#39;/&#39;</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">exports</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">router</span>;</span></span></code></pre></div></div>
+    </div>
+    <div
+      data-tab-item="serverjs"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">express</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;express&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">taskRoutes</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;./controllers/taskController&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">express</span>();
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">PORT</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">3000</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">set</span>(<span style="color:#e6db74">&#39;view engine&#39;</span>, <span style="color:#e6db74">&#39;ejs&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">use</span>(<span style="color:#a6e22e">express</span>.<span style="color:#a6e22e">urlencoded</span>({ <span style="color:#a6e22e">extended</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span> })); <span style="color:#75715e">// Middleware para procesar datos de formularios
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">use</span>(<span style="color:#e6db74">&#39;/&#39;</span>, <span style="color:#a6e22e">taskRoutes</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">listen</span>(<span style="color:#a6e22e">PORT</span>, () =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`Server running at http://localhost:</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">PORT</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>});</span></span></code></pre></div></div>
+    </div>
+  </div>
+</div>
+<p>El resultado obtenido fue satisfactorio, ya que nos permitía simular una app simple para añadir tareas y luego eliminarlas.</p>
+<h3 id="conclusiones">Conclusiones</h3>
+<p>Está bien para entender como es la estuctura de una app simple y como funciona la <strong>Arquitectura MVC</strong>.</p>
+<h3 id="proyección-de-la-practica">Proyección de la practica</h3>
+<p>Se usa diariamente, así que es necesario saber como se hace.</p>
+<hr>
+<h3 id="reflexión-personal">Reflexión personal</h3>
+<p>Estuvo bien, ya que al realizarlo, probarlo y verlo, ayuda a terminar de entender los conceptos.</p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation showVisitedLinks">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/"><img src="./images/logo.png" alt="logo" style="width:180px;height:180px;"></a>
+        </div>
+        <form action="/search.html" method="get"><div class="searchbox default-animation">
+          <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+          <label class="a11y-only" for="R-search-by">Search</label>
+          <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+          <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+        </div></form>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1701958914" defer></script>
+        <script src="/js/lunr/lunr.min.js?1701958914" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1701958914" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1701958914" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1701958914" defer></script>
+        <script src="/js/search.js?1701958914" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li><a class="padding" href="/index.html"><i class="fas fa-home"></i> Home</a></li>
+        </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/1ertrimestre/index.html" class="parent "><input type="checkbox" id="R-section-a914b3f09483160ee750f687e8097cd5" aria-controls="R-subsections-a914b3f09483160ee750f687e8097cd5" checked><label for="R-section-a914b3f09483160ee750f687e8097cd5"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu 1er Trimestre IAW</span></label><a class="padding" href="/1ertrimestre/index.html">1er Trimestre IAW<i class="fas fa-check read-icon"></i></a><ul id="R-subsections-a914b3f09483160ee750f687e8097cd5" class="morespace collapsible-menu">
+          <li data-nav-id="/1ertrimestre/ut1/index.html" class="alwaysopen"><input type="checkbox" id="R-section-f8e0d69e85860e2ae0bdd89adb475440" aria-controls="R-subsections-f8e0d69e85860e2ae0bdd89adb475440" checked><label for="R-section-f8e0d69e85860e2ae0bdd89adb475440"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Unidad 1: Introducción a las Aplicaciones Web</span></label><a class="padding" href="/1ertrimestre/ut1/index.html">Unidad 1: Introducción a las Aplicaciones Web<i class="fas fa-check read-icon"></i></a><ul id="R-subsections-f8e0d69e85860e2ae0bdd89adb475440" class="morespace collapsible-menu">
+          <li data-nav-id="/1ertrimestre/ut1/museovirtual/index.html" class=""><a class="padding" href="/1ertrimestre/ut1/museovirtual/index.html">Museo Virtual<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/1ertrimestre/ut1/hugo/index.html" class="alwaysopen"><input type="checkbox" id="R-section-c8c6b5bfbe2ede97f0e324921737a7dd" aria-controls="R-subsections-c8c6b5bfbe2ede97f0e324921737a7dd" checked><label for="R-section-c8c6b5bfbe2ede97f0e324921737a7dd"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu HUGO Framework</span></label><a class="padding" href="/1ertrimestre/ut1/hugo/index.html">HUGO Framework<i class="fas fa-check read-icon"></i></a><ul id="R-subsections-c8c6b5bfbe2ede97f0e324921737a7dd" class="morespace collapsible-menu">
+          <li data-nav-id="/1ertrimestre/ut1/hugo/creacionsitehugo/index.html" class=""><a class="padding" href="/1ertrimestre/ut1/hugo/creacionsitehugo/index.html">Creación Site con HUGO<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/1ertrimestre/ut1/hugo/desplieguesitehugo/index.html" class=""><a class="padding" href="/1ertrimestre/ut1/hugo/desplieguesitehugo/index.html">Despliegue HUGO en Plataformas<i class="fas fa-check read-icon"></i></a></li></ul></li></ul></li>
+          <li data-nav-id="/1ertrimestre/ut2/index.html" class="parent alwaysopen"><input type="checkbox" id="R-section-c630ddc6df1a8453ed79b23904bd1b4b" aria-controls="R-subsections-c630ddc6df1a8453ed79b23904bd1b4b" checked><label for="R-section-c630ddc6df1a8453ed79b23904bd1b4b"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Unidad 2: Arquitectura Web</span></label><a class="padding" href="/1ertrimestre/ut2/index.html">Unidad 2: Arquitectura Web<i class="fas fa-check read-icon"></i></a><ul id="R-subsections-c630ddc6df1a8453ed79b23904bd1b4b" class="morespace collapsible-menu">
+          <li data-nav-id="/1ertrimestre/ut2/camvamvc/index.html" class=""><a class="padding" href="/1ertrimestre/ut2/camvamvc/index.html">Canva MVC<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/1ertrimestre/ut2/mvcnodejs/index.html" class="active"><a class="padding" href="/1ertrimestre/ut2/mvcnodejs/index.html">Arquitectura MVC en Node.JS<i class="fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/1ertrimestre/ut3/index.html" class="alwaysopen"><input type="checkbox" id="R-section-097f2f36d67ec86c9fab1c05a08967dd" aria-controls="R-subsections-097f2f36d67ec86c9fab1c05a08967dd" checked><label for="R-section-097f2f36d67ec86c9fab1c05a08967dd"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Unidad 3: Servidores Web</span></label><a class="padding" href="/1ertrimestre/ut3/index.html">Unidad 3: Servidores Web<i class="fas fa-check read-icon"></i></a><ul id="R-subsections-097f2f36d67ec86c9fab1c05a08967dd" class="morespace collapsible-menu">
+          <li data-nav-id="/1ertrimestre/ut3/instmigdespappwebphp/index.html" class=""><a class="padding" href="/1ertrimestre/ut3/instmigdespappwebphp/index.html">Tipos de Instalación, Migración y Despliegue de aplicaciones web en PHP<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/1ertrimestre/ut3/virtualhostapache/index.html" class=""><a class="padding" href="/1ertrimestre/ut3/virtualhostapache/index.html">Configuración Virtual Host en Apache<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/1ertrimestre/ut3/https/index.html" class="alwaysopen"><input type="checkbox" id="R-section-b9e0a6708c125254ef7012e777bb2c83" aria-controls="R-subsections-b9e0a6708c125254ef7012e777bb2c83" checked><label for="R-section-b9e0a6708c125254ef7012e777bb2c83"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu HTTPS</span></label><a class="padding" href="/1ertrimestre/ut3/https/index.html">HTTPS<i class="fas fa-check read-icon"></i></a><ul id="R-subsections-b9e0a6708c125254ef7012e777bb2c83" class="morespace collapsible-menu">
+          <li data-nav-id="/1ertrimestre/ut3/https/p1apacheubuntu/index.html" class=""><a class="padding" href="/1ertrimestre/ut3/https/p1apacheubuntu/index.html">Instalar Apache en Ubuntu y Ver la Seguridad 1/2<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/1ertrimestre/ut3/https/p2https/index.html" class=""><a class="padding" href="/1ertrimestre/ut3/https/p2https/index.html">Instalar HTTPS 2/2<i class="fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/1ertrimestre/ut3/proxyinversoyexamen/index.html" class=""><a class="padding" href="/1ertrimestre/ut3/proxyinversoyexamen/index.html">Configuración de un Proxy Inverso en Apache<i class="fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/1ertrimestre/ut4/index.html" class="alwaysopen"><input type="checkbox" id="R-section-7d3361b77d6fc803fb4e7530334bca35" aria-controls="R-subsections-7d3361b77d6fc803fb4e7530334bca35" checked><label for="R-section-7d3361b77d6fc803fb4e7530334bca35"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Unidad 4: Desarrollo Backend</span></label><a class="padding" href="/1ertrimestre/ut4/index.html">Unidad 4: Desarrollo Backend<i class="fas fa-check read-icon"></i></a><ul id="R-subsections-7d3361b77d6fc803fb4e7530334bca35" class="morespace collapsible-menu">
+          <li data-nav-id="/1ertrimestre/ut4/gitlab/index.html" class=""><a class="padding" href="/1ertrimestre/ut4/gitlab/index.html">Laboratorio de Git<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/1ertrimestre/ut4/javascript/index.html" class=""><a class="padding" href="/1ertrimestre/ut4/javascript/index.html">Ejercicios de Iniciación a JavaScript<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/1ertrimestre/ut4/nodejs/index.html" class=""><a class="padding" href="/1ertrimestre/ut4/nodejs/index.html">Ejercicios de Iniciación a Node.JS<i class="fas fa-check read-icon"></i></a></li></ul></li></ul></li>
+          <li data-nav-id="/2ndtrimestre/index.html" class=""><a class="padding" href="/2ndtrimestre/index.html">2do Trimestre IAW<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/3rdtrimestre/index.html" class=""><a class="padding" href="/3rdtrimestre/index.html">3er Trimestre IAW<i class="fas fa-check read-icon"></i></a></li>
+          </ul>
+        </div>
+        <div id="R-shortcuts">
+          <div class="nav-title padding">More</div>
+          <ul class="space">
+            <li><a class="padding" href="https://github.com/Orflo/PortfolioIAW"><i class='fab fa-fw fa-github'></i> GitHub repo</a></li>
+            <li><a class="padding" href="/tags/index.html"><i class='fas fa-fw fa-tags'></i> Tags</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showVisitedLinks showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showVisitedLinks showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showVariantSwitch showVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-language fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = baseUri + this.value;">
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch showVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-paint-brush fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-relearn-auto" value="relearn-auto" selected>Relearn Light/Dark</option>
+                      <option id="R-relearn-light" value="relearn-light">Relearn Light</option>
+                      <option id="R-relearn-dark" value="relearn-dark">Relearn Dark</option>
+                      <option id="R-relearn-bright" value="relearn-bright">Relearn Bright</option>
+                      <option id="R-zen-auto" value="zen-auto">Zen Light/Dark</option>
+                      <option id="R-zen-light" value="zen-light">Zen Light</option>
+                      <option id="R-zen-dark" value="zen-dark">Zen Dark</option>
+                      <option id="R-neon" value="neon">Neon</option>
+                      <option id="R-learn" value="learn">Learn</option>
+                      <option id="R-blue" value="blue">Blue</option>
+                      <option id="R-green" value="green">Green</option>
+                      <option id="R-red" value="red">Red</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks showVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fas fa-history fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter">
+	    <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1701958914" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1701958914" defer></script>
+    <script src="/js/theme.js?1701958914" defer></script>
+  </body>
+</html>

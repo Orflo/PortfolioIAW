@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ut1 on Portfolio IAW</title>
+    <link>https://portfolioiaw.onrender.com/tags/ut1/index.html</link>
+    <description>Recent content in ut1 on Portfolio IAW</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://portfolioiaw.onrender.com/tags/ut1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Unidad 1: Introducción a las Aplicaciones Web</title>
+      <link>https://portfolioiaw.onrender.com/1ertrimestre/ut1/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://portfolioiaw.onrender.com/1ertrimestre/ut1/index.html</guid>
+      <description> </description>
+    </item>
+    <item>
+      <title>Museo Virtual</title>
+      <link>https://portfolioiaw.onrender.com/1ertrimestre/ut1/museovirtual/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://portfolioiaw.onrender.com/1ertrimestre/ut1/museovirtual/index.html</guid>
+      <description>Descripción de la práctica Objetivo de la práctica El objetivo fue para ver un poco la historia de las aplicaciones y realizar un trabajo sobre ello de manera diferente.
+Procedimientos seguidos Las intrucciones que había en el sitio web y el contenido según lo indicado en la práctica.
+Resultados obtenidos IBM por los años Conclusiones Interesante la historía y como ha evolucionado, también interesante la aplicación web que usamos, ya que permte crear y emular un museo en 3D.</description>
+    </item>
+    <item>
+      <title>HUGO Framework</title>
+      <link>https://portfolioiaw.onrender.com/1ertrimestre/ut1/hugo/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://portfolioiaw.onrender.com/1ertrimestre/ut1/hugo/index.html</guid>
+      <description> </description>
+    </item>
+    <item>
+      <title>Creación Site con HUGO</title>
+      <link>https://portfolioiaw.onrender.com/1ertrimestre/ut1/hugo/creacionsitehugo/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://portfolioiaw.onrender.com/1ertrimestre/ut1/hugo/creacionsitehugo/index.html</guid>
+      <description>Descripción de la práctica Objetivo de la práctica Creación de una página web estatica, que son mucho más eficientes y rápidas usando un framework, cosa que facilita la creación de la misma.
+Procedimientos seguidos Se han seguido las indicaciones de la documentación adjuntada, y cuando era necesario, se ha seguido la documentación del tema que se ha elegido.
+Resultados obtenidos Despliegue en 000webhostapp Conclusiones A veces es mucho más eficiente y más rápido de desarrollar una página con un framework para mostrarse al cliente que hacerla desde 0.</description>
+    </item>
+    <item>
+      <title>Despliegue HUGO en Plataformas</title>
+      <link>https://portfolioiaw.onrender.com/1ertrimestre/ut1/hugo/desplieguesitehugo/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://portfolioiaw.onrender.com/1ertrimestre/ut1/hugo/desplieguesitehugo/index.html</guid>
+      <description>Descripción de la práctica Desplegar la página creada en Hugo en diferentes sites.
+Objetivo de la práctica Demostrar que hay diferentes metodos de despliegue de páginas en diferentes plataformas.
+Procedimientos seguidos Los indicados para cada caso, en Surge.sh se han seguido las indicaciones del profesor, y en Render se han seguido las indicaciones de la página, esta última ha requerido de subur la página a GitHub.
+Resultados obtenidos Despliegue con Surge.</description>
+    </item>
+  </channel>
+</rss>

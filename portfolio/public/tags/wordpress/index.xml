@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>wordpress on Portfolio IAW</title>
+    <link>https://portfolioiaw.onrender.com/tags/wordpress/index.html</link>
+    <description>Recent content in wordpress on Portfolio IAW</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://portfolioiaw.onrender.com/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tipos de Instalación, Migración y Despliegue de aplicaciones web en PHP</title>
+      <link>https://portfolioiaw.onrender.com/1ertrimestre/ut3/instmigdespappwebphp/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://portfolioiaw.onrender.com/1ertrimestre/ut3/instmigdespappwebphp/index.html</guid>
+      <description>Descripción de la práctica Objetivo de la práctica Instalación de un WordPress en un servidor de Apache de XAMPP de forma visual y por comandos, y la realización de una migración del mismo con un compañero y ver los resultados.
+Procedimientos seguidos Los procediemtos que se siguieron fueron los indicados en la práctica, y los manuales que se adjuntaron en ella.
+Resultados obtenidos Instalación de CMS en XAMPP-APACHE-MARIADB Migración WordPress Instalación de WordPress por Comandos Conclusiones Es un proceso que puede ser complicado, pero con una buena guía y sentido común, se pueden solucionar los problemas que uno se pueda encontrar.</description>
+    </item>
+  </channel>
+</rss>

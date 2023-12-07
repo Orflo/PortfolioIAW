@@ -23,6 +23,15 @@
  - Finalización de la práctica Instalar Apache en Ubuntu y Ver la Seguridad 1/2
  - Finalización de la práctica Instalar HTTPS 2/2
  - Finalización de la práctica Proxy Inverso/Examen Final
+ - Finalización de UT3
 
  ---
  ## 07/12/2023
+ - Inicio UT4
+ - Finalización de la práctica de GitLab
+ - Finalización de la práctica JavaScript
+ - Finalización de la práctica Node.JS
+ - Finalización de UT4
+ - Finalización del Portfolio
+ - Creación de la carpeta public y subida a GitHub
+ - Despliegue en Render y entrega en el Classroom

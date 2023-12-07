@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ut4 on Portfolio IAW</title>
+    <link>https://portfolioiaw.onrender.com/tags/ut4/index.html</link>
+    <description>Recent content in ut4 on Portfolio IAW</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://portfolioiaw.onrender.com/tags/ut4/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Unidad 4: Desarrollo Backend</title>
+      <link>https://portfolioiaw.onrender.com/1ertrimestre/ut4/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://portfolioiaw.onrender.com/1ertrimestre/ut4/index.html</guid>
+      <description> </description>
+    </item>
+    <item>
+      <title>Laboratorio de Git</title>
+      <link>https://portfolioiaw.onrender.com/1ertrimestre/ut4/gitlab/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://portfolioiaw.onrender.com/1ertrimestre/ut4/gitlab/index.html</guid>
+      <description>Descripción de la práctica Objetivo de la práctica Iniciación y aprendizaje de Git para entender el uso en el mundo del desarollo. En esta práctica se agruparan todas las que se han realizado, ya que se ha trabajo siempre sobre la principal.
+Procedimientos seguidos Se siguieron las intrucciones dadas en clase y luego las indicadas en el laboratorio de Git subido por el Profesor.
+Resultados obtenidos Se entendió como crear un repositorio, asociarlo y realizar los comandos principales de Git, también se comprendió lo fácil que puede ser volver a una versión anterior y crear una nueva rama, y los problemas que conlleva realizar un merge de esa rama con la principal.</description>
+    </item>
+    <item>
+      <title>Ejercicios de Iniciación a JavaScript</title>
+      <link>https://portfolioiaw.onrender.com/1ertrimestre/ut4/javascript/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://portfolioiaw.onrender.com/1ertrimestre/ut4/javascript/index.html</guid>
+      <description>Descripción de la práctica Objetivo de la práctica Iniciación y aprendizaje de conceptos básicos de JavaScript.
+Procedimientos seguidos Se siguieron las instrucciones indicadas por el profesor y se fueron realizando los ejercicos en clase y en casa.
+Resultados obtenidos Ejercicios Realizados en Clase y en Casa Ejercicios JavaScript ejemplo.html/Calculadora EjerciciosClaseJS1.html EjerciciosJS.html &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt; &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.0&amp;#34;&amp;gt; &amp;lt;title&amp;gt;Calculadora&amp;lt;/title&amp;gt; &amp;lt;script&amp;gt; var num1 = parseInt(prompt (&amp;#34;numero 1&amp;#34;)); var num2 = parseInt(prompt (&amp;#34;numero 2&amp;#34;)); //metodo sumar function sumar () { return num1+num2; } //metodo resta function resta () { return num1-num2; } //metodo mult function mult() { return num1*num2; } //metodo div function div () { return num1/num2; } &amp;lt;/script&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;input type=&amp;#34;button&amp;#34; onclick=&amp;#34;alert(sumar(num1,num2))&amp;#34; value=&amp;#34;sumar&amp;#34;&amp;gt; &amp;lt;input type=&amp;#34;button&amp;#34; onclick=&amp;#34;alert(resta(num1,num2))&amp;#34; value=&amp;#34;restar&amp;#34;&amp;gt; &amp;lt;input type=&amp;#34;button&amp;#34; onclick=&amp;#34;alert(div(num1,num2))&amp;#34; value=&amp;#34;dividir&amp;#34;&amp;gt; &amp;lt;input type=&amp;#34;button&amp;#34; onclick=&amp;#34;alert(mult(num1,num2))&amp;#34; value=&amp;#34;multiplicar&amp;#34;&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; &amp;lt;!</description>
+    </item>
+    <item>
+      <title>Ejercicios de Iniciación a Node.JS</title>
+      <link>https://portfolioiaw.onrender.com/1ertrimestre/ut4/nodejs/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://portfolioiaw.onrender.com/1ertrimestre/ut4/nodejs/index.html</guid>
+      <description>Descripción de la práctica Objetivo de la práctica Iniciación y aprendizaje de conceptos básicos de Node.JS creando Proyectos.
+Procedimientos seguidos Se siguieron las instrucciones indicadas por el profesor y se fueron realizando los ejercicos en clase.
+Resultados obtenidos Ejercicios Node.JS Ejercicios Node.JS Node.js/servidor.js = Servidor + Ficheros ProjectoNodeJS/app.js = Node.JS ProjectoNodeJS2/app.js = Express JS //node NombreDelArchivo.js para poner el servidor en marcha //crear una constatnte para que llame a la librería del modulo http y fs const http = require(&amp;#39;http&amp;#39;); const fs = require(&amp;#39;fs&amp;#39;); //Creamos un log de consola console.</description>
+    </item>
+  </channel>
+</rss>

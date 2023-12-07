@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.118.2">
+    <meta name="generator" content="Relearn 5.23.2+tip">
+    <meta name="description" content="">
+    <meta name="author" content="Lucas Antonelli">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Ejercicios de Iniciación a JavaScript :: Portfolio IAW">
+    <meta name="twitter:description" content="Descripción de la práctica Objetivo de la práctica Iniciación y aprendizaje de conceptos básicos de JavaScript.
+Procedimientos seguidos Se siguieron las instrucciones indicadas por el profesor y se fueron realizando los ejercicos en clase y en casa.
+Resultados obtenidos Ejercicios Realizados en Clase y en Casa Ejercicios JavaScript ejemplo.html/Calculadora EjerciciosClaseJS1.html EjerciciosJS.html &lt;!DOCTYPE html&gt; &lt;html lang=&#34;en&#34;&gt; &lt;head&gt; &lt;meta charset=&#34;UTF-8&#34;&gt; &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34;&gt; &lt;title&gt;Calculadora&lt;/title&gt; &lt;script&gt; var num1 = parseInt(prompt (&#34;numero 1&#34;)); var num2 = parseInt(prompt (&#34;numero 2&#34;)); //metodo sumar function sumar () { return num1&#43;num2; } //metodo resta function resta () { return num1-num2; } //metodo mult function mult() { return num1*num2; } //metodo div function div () { return num1/num2; } &lt;/script&gt; &lt;/head&gt; &lt;body&gt; &lt;input type=&#34;button&#34; onclick=&#34;alert(sumar(num1,num2))&#34; value=&#34;sumar&#34;&gt; &lt;input type=&#34;button&#34; onclick=&#34;alert(resta(num1,num2))&#34; value=&#34;restar&#34;&gt; &lt;input type=&#34;button&#34; onclick=&#34;alert(div(num1,num2))&#34; value=&#34;dividir&#34;&gt; &lt;input type=&#34;button&#34; onclick=&#34;alert(mult(num1,num2))&#34; value=&#34;multiplicar&#34;&gt; &lt;/body&gt; &lt;/html&gt; &lt;!">
+    <meta property="og:title" content="Ejercicios de Iniciación a JavaScript :: Portfolio IAW">
+    <meta property="og:description" content="Descripción de la práctica Objetivo de la práctica Iniciación y aprendizaje de conceptos básicos de JavaScript.
+Procedimientos seguidos Se siguieron las instrucciones indicadas por el profesor y se fueron realizando los ejercicos en clase y en casa.
+Resultados obtenidos Ejercicios Realizados en Clase y en Casa Ejercicios JavaScript ejemplo.html/Calculadora EjerciciosClaseJS1.html EjerciciosJS.html &lt;!DOCTYPE html&gt; &lt;html lang=&#34;en&#34;&gt; &lt;head&gt; &lt;meta charset=&#34;UTF-8&#34;&gt; &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34;&gt; &lt;title&gt;Calculadora&lt;/title&gt; &lt;script&gt; var num1 = parseInt(prompt (&#34;numero 1&#34;)); var num2 = parseInt(prompt (&#34;numero 2&#34;)); //metodo sumar function sumar () { return num1&#43;num2; } //metodo resta function resta () { return num1-num2; } //metodo mult function mult() { return num1*num2; } //metodo div function div () { return num1/num2; } &lt;/script&gt; &lt;/head&gt; &lt;body&gt; &lt;input type=&#34;button&#34; onclick=&#34;alert(sumar(num1,num2))&#34; value=&#34;sumar&#34;&gt; &lt;input type=&#34;button&#34; onclick=&#34;alert(resta(num1,num2))&#34; value=&#34;restar&#34;&gt; &lt;input type=&#34;button&#34; onclick=&#34;alert(div(num1,num2))&#34; value=&#34;dividir&#34;&gt; &lt;input type=&#34;button&#34; onclick=&#34;alert(mult(num1,num2))&#34; value=&#34;multiplicar&#34;&gt; &lt;/body&gt; &lt;/html&gt; &lt;!">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://portfolioiaw.onrender.com/1ertrimestre/ut4/javascript/index.html">
+    <meta property="article:section" content="Unidad 4: Desarrollo Backend :: Portfolio IAW">
+    <meta property="og:site_name" content="Portfolio IAW">
+    <title>Ejercicios de Iniciación a JavaScript :: Portfolio IAW</title>
+    <link href="/images/favicon.svg?1701958914" rel="icon" type="image/svg+xml">
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/css/fontawesome-all.min.css?1701958914" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1701958914" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1701958914" rel="stylesheet">
+    <link href="/css/auto-complete.css?1701958914" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1701958914" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1701958914" rel="stylesheet">
+    <link href="/css/fonts.css?1701958914" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1701958914" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1701958914" rel="stylesheet">
+    <link href="/css/theme-relearn-auto.css?1701958914" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-auto.css?1701958914" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1701958914" rel="stylesheet">
+    <link href="/css/print.css?1701958914" rel="stylesheet" media="print">
+    <link href="/css/ie.css?1701958914" rel="stylesheet">
+    <script src="/js/url.js?1701958914"></script>
+    <script src="/js/variant.js?1701958914"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="/index.search.js";
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      window.relearn = window.relearn || {};
+      window.relearn.baseUriFull='https:\/\/portfolioiaw.onrender.com/';
+      // variant stuff
+      window.relearn.themeVariantModifier='';
+      window.variants && variants.init( [ 'relearn-auto', 'relearn-light', 'relearn-dark', 'relearn-bright', 'zen-auto', 'zen-light', 'zen-dark', 'neon', 'learn', 'blue', 'green', 'red' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/1ertrimestre/ut4/javascript/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"><nav class="TableOfContents">
+  <ul>
+    <li><a href="#descripción-de-la-práctica">Descripción de la práctica</a>
+      <ul>
+        <li><a href="#objetivo-de-la-práctica">Objetivo de la práctica</a></li>
+        <li><a href="#procedimientos-seguidos">Procedimientos seguidos</a></li>
+        <li><a href="#resultados-obtenidos">Resultados obtenidos</a></li>
+        <li><a href="#conclusiones">Conclusiones</a></li>
+        <li><a href="#proyección-de-la-practica">Proyección de la practica</a></li>
+        <li><a href="#reflexión-personal">Reflexión personal</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/1ertrimestre/index.html"><span itemprop="name">1er Trimestre IAW</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/1ertrimestre/ut4/index.html"><span itemprop="name">Unidad 4: Desarrollo Backend</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Ejercicios de Iniciación a JavaScript</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/1ertrimestre/ut4/gitlab/index.html" title="Laboratorio de Git (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/1ertrimestre/ut4/nodejs/index.html" title="Ejercicios de Iniciación a Node.JS (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+<div class=" taxonomy-tags term-list cstyle  tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <ul>
+    <li><a class="term-link" href="/tags/1ertrimestre/index.html">1ertrimestre</a></li>
+    <li><a class="term-link" href="/tags/javascript/index.html">javascript</a></li>
+    <li><a class="term-link" href="/tags/ut4/index.html">ut4</a></li>
+  </ul>
+</div>
+            </header>
+<h1 id="ejercicios-de-iniciación-a-javascript">Ejercicios de Iniciación a JavaScript</h1>
+
+<hr>
+<h2 id="descripción-de-la-práctica">Descripción de la práctica</h2>
+<h3 id="objetivo-de-la-práctica">Objetivo de la práctica</h3>
+<p>Iniciación y aprendizaje de conceptos básicos de <strong>JavaScript</strong>.</p>
+<h3 id="procedimientos-seguidos">Procedimientos seguidos</h3>
+<p>Se siguieron las instrucciones indicadas por el profesor y se fueron realizando los ejercicos en clase y en casa.</p>
+<h3 id="resultados-obtenidos">Resultados obtenidos</h3>
+<ul>
+<li><a href="https://github.com/Orflo/LabJSNodejs/tree/main/JavaScript" target="_blank">Ejercicios Realizados en Clase y en Casa</a></li>
+</ul>
+
+<div class="tab-panel" data-tab-group="1ed432a325eb613eb878f770837e1e9e">
+  <div class="tab-nav">
+    <div class="tab-nav-title">Ejercicios JavaScript</div>
+    <button
+      data-tab-item="ejemplohtmlcalculadora"
+      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
+      onclick="switchTab('1ed432a325eb613eb878f770837e1e9e','ejemplohtmlcalculadora')"
+    >
+      <span class="tab-nav-text">ejemplo.html/Calculadora</span>
+    </button>
+    <button
+      data-tab-item="ejerciciosclasejs1html"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('1ed432a325eb613eb878f770837e1e9e','ejerciciosclasejs1html')"
+    >
+      <span class="tab-nav-text">EjerciciosClaseJS1.html</span>
+    </button>
+    <button
+      data-tab-item="ejerciciosjshtml"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('1ed432a325eb613eb878f770837e1e9e','ejerciciosjshtml')"
+    >
+      <span class="tab-nav-text">EjerciciosJS.html</span>
+    </button>
+  </div>
+  <div class="tab-content-container">
+    <div
+      data-tab-item="ejemplohtmlcalculadora"
+      class="tab-content tab-panel-style cstyle initial active">
+      <div class="tab-content-text">
+
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;UTF-8&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;viewport&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width=device-width, initial-scale=1.0&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">title</span>&gt;Calculadora&lt;/<span style="color:#f92672">title</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">num1</span> <span style="color:#f92672">=</span> parseInt(<span style="color:#a6e22e">prompt</span> (<span style="color:#e6db74">&#34;numero 1&#34;</span>));
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">num2</span> <span style="color:#f92672">=</span> parseInt(<span style="color:#a6e22e">prompt</span> (<span style="color:#e6db74">&#34;numero 2&#34;</span>));
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">//metodo sumar
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">sumar</span> () {
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">num1</span><span style="color:#f92672">+</span><span style="color:#a6e22e">num2</span>;
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">//metodo resta
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">resta</span> () {
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">num1</span><span style="color:#f92672">-</span><span style="color:#a6e22e">num2</span>;
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">//metodo mult
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">mult</span>() {
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">num1</span><span style="color:#f92672">*</span><span style="color:#a6e22e">num2</span>;
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">//metodo div
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">div</span> () {
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">num1</span><span style="color:#f92672">/</span><span style="color:#a6e22e">num2</span>;
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;button&#34;</span> <span style="color:#a6e22e">onclick</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;alert(sumar(num1,num2))&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sumar&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;button&#34;</span> <span style="color:#a6e22e">onclick</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;alert(resta(num1,num2))&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;restar&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;button&#34;</span> <span style="color:#a6e22e">onclick</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;alert(div(num1,num2))&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;dividir&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;button&#34;</span> <span style="color:#a6e22e">onclick</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;alert(mult(num1,num2))&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;multiplicar&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;</span></span></code></pre></div></div>
+    </div>
+    <div
+      data-tab-item="ejerciciosclasejs1html"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;UTF-8&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;viewport&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width=device-width, initial-scale=1.0&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">title</span>&gt;Ejercicoos JS&lt;/<span style="color:#f92672">title</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">////////////////comparación///////////////////////////////////////////////////////////
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">num1</span> <span style="color:#f92672">=</span> parseInt(<span style="color:#a6e22e">prompt</span> (<span style="color:#e6db74">&#34;numero 1&#34;</span>));
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">num2</span> <span style="color:#f92672">=</span> parseInt(<span style="color:#a6e22e">prompt</span> (<span style="color:#e6db74">&#34;numero 2&#34;</span>));
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">comp</span> (){
+</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">num1</span> <span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">num2</span>){
+</span></span><span style="display:flex;"><span>                        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">num1</span><span style="color:#f92672">+</span><span style="color:#e6db74">&#34; es mayor que &#34;</span><span style="color:#f92672">+</span><span style="color:#a6e22e">num2</span>;
+</span></span><span style="display:flex;"><span>                    }<span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">num1</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">num2</span>){
+</span></span><span style="display:flex;"><span>                        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">num1</span><span style="color:#f92672">+</span><span style="color:#e6db74">&#34; es menor que &#34;</span><span style="color:#f92672">+</span><span style="color:#a6e22e">num2</span>;
+</span></span><span style="display:flex;"><span>                    }<span style="color:#66d9ef">else</span>{
+</span></span><span style="display:flex;"><span>                        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">num1</span><span style="color:#f92672">+</span><span style="color:#e6db74">&#34; es igual a &#34;</span><span style="color:#f92672">+</span><span style="color:#a6e22e">num2</span>;
+</span></span><span style="display:flex;"><span>                    }
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">////////////////listas con bucle for///////////////////////////////////////////////////
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">listar</span> (){
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">lista</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">13</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">25</span>];
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">num1</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">lista</span>.<span style="color:#a6e22e">length</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>){
+</span></span><span style="display:flex;"><span>                    <span style="color:#a6e22e">num2</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">lista</span>[<span style="color:#a6e22e">i</span>]
+</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">num2</span> <span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">num1</span>){
+</span></span><span style="display:flex;"><span>                        <span style="color:#a6e22e">num1</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">num2</span>
+</span></span><span style="display:flex;"><span>                    }
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">alert</span>(<span style="color:#a6e22e">num1</span>)
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">listar</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//////////////listas con bucle for y ordenando números de menor a mayor//////////////
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">order</span> (){
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">lista</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">13</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">5</span>];
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">lista2</span> <span style="color:#f92672">=</span>[];
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">lista</span>.<span style="color:#a6e22e">length</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>){
+</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">lista</span>[<span style="color:#a6e22e">i</span>] <span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">lista</span>[<span style="color:#a6e22e">i</span><span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>]){
+</span></span><span style="display:flex;"><span>                        <span style="color:#a6e22e">aux</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">lista</span>[<span style="color:#a6e22e">i</span><span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span>                        <span style="color:#a6e22e">lista2</span>[<span style="color:#a6e22e">i</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">aux</span>
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">alert</span>(<span style="color:#a6e22e">lista2</span>)
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">order</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;button&#34;</span> <span style="color:#a6e22e">onclick</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;alert(comp(num1,num2))&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;comparar&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;</span></span></code></pre></div></div>
+    </div>
+    <div
+      data-tab-item="ejerciciosjshtml"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;UTF-8&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;viewport&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width=device-width, initial-scale=1.0&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">title</span>&gt;Ejercicios JS&lt;/<span style="color:#f92672">title</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">Script</span>&gt;
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">//Ejercicio 1: Saludo personalizado
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#a6e22e">alert</span>(<span style="color:#e6db74">&#34;Ejercicio 1: Saludo personalizado&#34;</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">prompt</span>(<span style="color:#e6db74">&#34;Introduzca su nombre&#34;</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">alert</span>(<span style="color:#e6db74">&#34;Bienvenido &#34;</span><span style="color:#f92672">+</span><span style="color:#a6e22e">name</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">//Ejercicio 2: Suma de Dos Números
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#a6e22e">alert</span>(<span style="color:#e6db74">&#34;Ejercicio 2: Suma de Dos Números&#34;</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">num1</span> <span style="color:#f92672">=</span> parseInt(<span style="color:#a6e22e">prompt</span> (<span style="color:#e6db74">&#34;Introduzca el primer número&#34;</span>))
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">num2</span> <span style="color:#f92672">=</span> parseInt(<span style="color:#a6e22e">prompt</span> (<span style="color:#e6db74">&#34;Introduzca el segundo número&#34;</span>))
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">totalsuma</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">num1</span><span style="color:#f92672">+</span><span style="color:#a6e22e">num2</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">alert</span>(<span style="color:#e6db74">&#34;El resultado es &#34;</span><span style="color:#f92672">+</span><span style="color:#a6e22e">totalsuma</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">//Ejercicio 3: Verificador de edad
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#a6e22e">alert</span>(<span style="color:#e6db74">&#34;Ejercicio 3: Verificador de edad&#34;</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">edad</span> <span style="color:#f92672">=</span> parseInt(<span style="color:#a6e22e">prompt</span>(<span style="color:#e6db74">&#34;Introduzca su edad&#34;</span>))
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">edad</span> <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">18</span>){
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">alert</span>(<span style="color:#e6db74">&#34;Es mayor de edad&#34;</span>)
+</span></span><span style="display:flex;"><span>            }<span style="color:#66d9ef">else</span>{
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">alert</span>(<span style="color:#e6db74">&#34;Es menor de edad&#34;</span>)
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">//Ejercicio 4: Contador simple
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#a6e22e">alert</span>(<span style="color:#e6db74">&#34;Ejercicio 4: Contador simple&#34;</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span><span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">&lt;=</span><span style="color:#ae81ff">10</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>){
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">alert</span>(<span style="color:#a6e22e">i</span>)
+</span></span><span style="display:flex;"><span>                  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">//Ejercicio 5: Cálculo del Factorial
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#a6e22e">alert</span>(<span style="color:#e6db74">&#34;Ejercicio 5: Cálculo del Factorial&#34;</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">num3</span> <span style="color:#f92672">=</span> parseInt(<span style="color:#a6e22e">prompt</span>(<span style="color:#e6db74">&#34;Introduzca un número para conocer su factorial&#34;</span>))
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">factorial</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span><span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">&lt;=</span><span style="color:#a6e22e">num3</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>){
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">factorial</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">factorial</span><span style="color:#f92672">*</span><span style="color:#a6e22e">i</span>
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">alert</span>(<span style="color:#e6db74">&#34;El factorial de &#34;</span><span style="color:#f92672">+</span><span style="color:#a6e22e">num3</span><span style="color:#f92672">+</span><span style="color:#e6db74">&#34; es &#34;</span><span style="color:#f92672">+</span><span style="color:#a6e22e">factorial</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">//Ejercicio 6: Lista de la compra
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#a6e22e">alert</span>(<span style="color:#e6db74">&#34;Ejercicio 6: Lista de la compra&#34;</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">listacompra</span> <span style="color:#f92672">=</span> [];
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">&lt;</span><span style="color:#ae81ff">5</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>){
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">item</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">prompt</span>(<span style="color:#e6db74">&#34;Introduzca el producto&#34;</span>)
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">listacompra</span>.<span style="color:#a6e22e">push</span>(<span style="color:#a6e22e">item</span>)
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">alert</span>(<span style="color:#a6e22e">listacompra</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">//Ejercicio 7: Números Pares e Impares
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#a6e22e">alert</span>(<span style="color:#e6db74">&#34;Ejercicio 7: Números Pares e Impares&#34;</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span><span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">&lt;=</span><span style="color:#ae81ff">10</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>){
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">i</span><span style="color:#f92672">%</span><span style="color:#ae81ff">2</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>){
+</span></span><span style="display:flex;"><span>                    <span style="color:#a6e22e">alert</span>(<span style="color:#a6e22e">i</span><span style="color:#f92672">+</span><span style="color:#e6db74">&#34; es par&#34;</span>)
+</span></span><span style="display:flex;"><span>                }<span style="color:#66d9ef">else</span>{
+</span></span><span style="display:flex;"><span>                    <span style="color:#a6e22e">alert</span>(<span style="color:#a6e22e">i</span><span style="color:#f92672">+</span><span style="color:#e6db74">&#34; es impar&#34;</span>)
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">//Ejercicio 8: Validador de contraseña
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#a6e22e">alert</span>(<span style="color:#e6db74">&#34;Ejercicio 8: Validador de contraseña&#34;</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">pass</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">prompt</span>(<span style="color:#e6db74">&#34;Introduza la contraseña&#34;</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">pass</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">6</span>){
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">alert</span>(<span style="color:#e6db74">&#34;La contraseña es válida&#34;</span>)
+</span></span><span style="display:flex;"><span>            }<span style="color:#66d9ef">else</span>{
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">alert</span>(<span style="color:#e6db74">&#34;La contraseña NO es válida&#34;</span>)
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">//Ejercicio 9: Adivina el numero
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#a6e22e">alert</span>(<span style="color:#e6db74">&#34;Ejercicio 9: Adivina el numero&#34;</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">num4</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">floor</span>(Math.<span style="color:#a6e22e">random</span>() <span style="color:#f92672">*</span> <span style="color:#ae81ff">10</span>)<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">alert</span>(<span style="color:#a6e22e">num4</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span><span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">&lt;=</span><span style="color:#ae81ff">3</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>){
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">respuesta</span> <span style="color:#f92672">=</span> parseInt(<span style="color:#a6e22e">prompt</span>(<span style="color:#e6db74">&#34;Intento &#34;</span><span style="color:#f92672">+</span><span style="color:#a6e22e">i</span><span style="color:#f92672">+</span><span style="color:#e6db74">&#34;. Introduzca un número del 1 al 10&#34;</span>))
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">num4</span> <span style="color:#f92672">==</span> <span style="color:#a6e22e">respuesta</span>){
+</span></span><span style="display:flex;"><span>                    <span style="color:#a6e22e">alert</span>(<span style="color:#e6db74">&#34;Felicidades!! Has acertado&#34;</span>)
+</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">break</span>
+</span></span><span style="display:flex;"><span>                }<span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">i</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">3</span>){
+</span></span><span style="display:flex;"><span>                    <span style="color:#a6e22e">alert</span>(<span style="color:#e6db74">&#34;Fin del juego, el numero correcto era &#34;</span><span style="color:#f92672">+</span><span style="color:#a6e22e">num4</span>)
+</span></span><span style="display:flex;"><span>                }<span style="color:#66d9ef">else</span>{
+</span></span><span style="display:flex;"><span>                    <span style="color:#a6e22e">alert</span>(<span style="color:#e6db74">&#34;No es correcto, intentalo otra vez&#34;</span>)
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">Script</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;</span></span></code></pre></div></div>
+    </div>
+  </div>
+</div>
+<h3 id="conclusiones">Conclusiones</h3>
+<p>Buena introducción a <strong>JavaScript</strong>, la da una vida nueva al <strong>html</strong> y abre muchas posibilidades, también sirvió de introducción a <strong>Node.JS</strong>.</p>
+<h3 id="proyección-de-la-practica">Proyección de la practica</h3>
+<p>Si se ralizan trabajos con <strong>JavaScript</strong>, o la creación de una página o aplicación web, seguramente será necesario utilizarlo.</p>
+<hr>
+<h3 id="reflexión-personal">Reflexión personal</h3>
+<p>Muy útil, hoy en día se usa, por lo que está bien entender concptos básicos de <strong>JavaScript</strong>. Una de mis partes favoritas del último mes.</p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation showVisitedLinks">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/"><img src="./images/logo.png" alt="logo" style="width:180px;height:180px;"></a>
+        </div>
+        <form action="/search.html" method="get"><div class="searchbox default-animation">
+          <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+          <label class="a11y-only" for="R-search-by">Search</label>
+          <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+          <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+        </div></form>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1701958914" defer></script>
+        <script src="/js/lunr/lunr.min.js?1701958914" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1701958914" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1701958914" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1701958914" defer></script>
+        <script src="/js/search.js?1701958914" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li><a class="padding" href="/index.html"><i class="fas fa-home"></i> Home</a></li>
+        </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/1ertrimestre/index.html" class="parent "><input type="checkbox" id="R-section-a914b3f09483160ee750f687e8097cd5" aria-controls="R-subsections-a914b3f09483160ee750f687e8097cd5" checked><label for="R-section-a914b3f09483160ee750f687e8097cd5"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu 1er Trimestre IAW</span></label><a class="padding" href="/1ertrimestre/index.html">1er Trimestre IAW<i class="fas fa-check read-icon"></i></a><ul id="R-subsections-a914b3f09483160ee750f687e8097cd5" class="morespace collapsible-menu">
+          <li data-nav-id="/1ertrimestre/ut1/index.html" class="alwaysopen"><input type="checkbox" id="R-section-f8e0d69e85860e2ae0bdd89adb475440" aria-controls="R-subsections-f8e0d69e85860e2ae0bdd89adb475440" checked><label for="R-section-f8e0d69e85860e2ae0bdd89adb475440"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Unidad 1: Introducción a las Aplicaciones Web</span></label><a class="padding" href="/1ertrimestre/ut1/index.html">Unidad 1: Introducción a las Aplicaciones Web<i class="fas fa-check read-icon"></i></a><ul id="R-subsections-f8e0d69e85860e2ae0bdd89adb475440" class="morespace collapsible-menu">
+          <li data-nav-id="/1ertrimestre/ut1/museovirtual/index.html" class=""><a class="padding" href="/1ertrimestre/ut1/museovirtual/index.html">Museo Virtual<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/1ertrimestre/ut1/hugo/index.html" class="alwaysopen"><input type="checkbox" id="R-section-c8c6b5bfbe2ede97f0e324921737a7dd" aria-controls="R-subsections-c8c6b5bfbe2ede97f0e324921737a7dd" checked><label for="R-section-c8c6b5bfbe2ede97f0e324921737a7dd"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu HUGO Framework</span></label><a class="padding" href="/1ertrimestre/ut1/hugo/index.html">HUGO Framework<i class="fas fa-check read-icon"></i></a><ul id="R-subsections-c8c6b5bfbe2ede97f0e324921737a7dd" class="morespace collapsible-menu">
+          <li data-nav-id="/1ertrimestre/ut1/hugo/creacionsitehugo/index.html" class=""><a class="padding" href="/1ertrimestre/ut1/hugo/creacionsitehugo/index.html">Creación Site con HUGO<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/1ertrimestre/ut1/hugo/desplieguesitehugo/index.html" class=""><a class="padding" href="/1ertrimestre/ut1/hugo/desplieguesitehugo/index.html">Despliegue HUGO en Plataformas<i class="fas fa-check read-icon"></i></a></li></ul></li></ul></li>
+          <li data-nav-id="/1ertrimestre/ut2/index.html" class="alwaysopen"><input type="checkbox" id="R-section-c630ddc6df1a8453ed79b23904bd1b4b" aria-controls="R-subsections-c630ddc6df1a8453ed79b23904bd1b4b" checked><label for="R-section-c630ddc6df1a8453ed79b23904bd1b4b"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Unidad 2: Arquitectura Web</span></label><a class="padding" href="/1ertrimestre/ut2/index.html">Unidad 2: Arquitectura Web<i class="fas fa-check read-icon"></i></a><ul id="R-subsections-c630ddc6df1a8453ed79b23904bd1b4b" class="morespace collapsible-menu">
+          <li data-nav-id="/1ertrimestre/ut2/camvamvc/index.html" class=""><a class="padding" href="/1ertrimestre/ut2/camvamvc/index.html">Canva MVC<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/1ertrimestre/ut2/mvcnodejs/index.html" class=""><a class="padding" href="/1ertrimestre/ut2/mvcnodejs/index.html">Arquitectura MVC en Node.JS<i class="fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/1ertrimestre/ut3/index.html" class="alwaysopen"><input type="checkbox" id="R-section-097f2f36d67ec86c9fab1c05a08967dd" aria-controls="R-subsections-097f2f36d67ec86c9fab1c05a08967dd" checked><label for="R-section-097f2f36d67ec86c9fab1c05a08967dd"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Unidad 3: Servidores Web</span></label><a class="padding" href="/1ertrimestre/ut3/index.html">Unidad 3: Servidores Web<i class="fas fa-check read-icon"></i></a><ul id="R-subsections-097f2f36d67ec86c9fab1c05a08967dd" class="morespace collapsible-menu">
+          <li data-nav-id="/1ertrimestre/ut3/instmigdespappwebphp/index.html" class=""><a class="padding" href="/1ertrimestre/ut3/instmigdespappwebphp/index.html">Tipos de Instalación, Migración y Despliegue de aplicaciones web en PHP<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/1ertrimestre/ut3/virtualhostapache/index.html" class=""><a class="padding" href="/1ertrimestre/ut3/virtualhostapache/index.html">Configuración Virtual Host en Apache<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/1ertrimestre/ut3/https/index.html" class="alwaysopen"><input type="checkbox" id="R-section-b9e0a6708c125254ef7012e777bb2c83" aria-controls="R-subsections-b9e0a6708c125254ef7012e777bb2c83" checked><label for="R-section-b9e0a6708c125254ef7012e777bb2c83"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu HTTPS</span></label><a class="padding" href="/1ertrimestre/ut3/https/index.html">HTTPS<i class="fas fa-check read-icon"></i></a><ul id="R-subsections-b9e0a6708c125254ef7012e777bb2c83" class="morespace collapsible-menu">
+          <li data-nav-id="/1ertrimestre/ut3/https/p1apacheubuntu/index.html" class=""><a class="padding" href="/1ertrimestre/ut3/https/p1apacheubuntu/index.html">Instalar Apache en Ubuntu y Ver la Seguridad 1/2<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/1ertrimestre/ut3/https/p2https/index.html" class=""><a class="padding" href="/1ertrimestre/ut3/https/p2https/index.html">Instalar HTTPS 2/2<i class="fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/1ertrimestre/ut3/proxyinversoyexamen/index.html" class=""><a class="padding" href="/1ertrimestre/ut3/proxyinversoyexamen/index.html">Configuración de un Proxy Inverso en Apache<i class="fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/1ertrimestre/ut4/index.html" class="parent alwaysopen"><input type="checkbox" id="R-section-7d3361b77d6fc803fb4e7530334bca35" aria-controls="R-subsections-7d3361b77d6fc803fb4e7530334bca35" checked><label for="R-section-7d3361b77d6fc803fb4e7530334bca35"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Unidad 4: Desarrollo Backend</span></label><a class="padding" href="/1ertrimestre/ut4/index.html">Unidad 4: Desarrollo Backend<i class="fas fa-check read-icon"></i></a><ul id="R-subsections-7d3361b77d6fc803fb4e7530334bca35" class="morespace collapsible-menu">
+          <li data-nav-id="/1ertrimestre/ut4/gitlab/index.html" class=""><a class="padding" href="/1ertrimestre/ut4/gitlab/index.html">Laboratorio de Git<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/1ertrimestre/ut4/javascript/index.html" class="active"><a class="padding" href="/1ertrimestre/ut4/javascript/index.html">Ejercicios de Iniciación a JavaScript<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/1ertrimestre/ut4/nodejs/index.html" class=""><a class="padding" href="/1ertrimestre/ut4/nodejs/index.html">Ejercicios de Iniciación a Node.JS<i class="fas fa-check read-icon"></i></a></li></ul></li></ul></li>
+          <li data-nav-id="/2ndtrimestre/index.html" class=""><a class="padding" href="/2ndtrimestre/index.html">2do Trimestre IAW<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/3rdtrimestre/index.html" class=""><a class="padding" href="/3rdtrimestre/index.html">3er Trimestre IAW<i class="fas fa-check read-icon"></i></a></li>
+          </ul>
+        </div>
+        <div id="R-shortcuts">
+          <div class="nav-title padding">More</div>
+          <ul class="space">
+            <li><a class="padding" href="https://github.com/Orflo/PortfolioIAW"><i class='fab fa-fw fa-github'></i> GitHub repo</a></li>
+            <li><a class="padding" href="/tags/index.html"><i class='fas fa-fw fa-tags'></i> Tags</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showVisitedLinks showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showVisitedLinks showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showVariantSwitch showVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-language fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = baseUri + this.value;">
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch showVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-paint-brush fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-relearn-auto" value="relearn-auto" selected>Relearn Light/Dark</option>
+                      <option id="R-relearn-light" value="relearn-light">Relearn Light</option>
+                      <option id="R-relearn-dark" value="relearn-dark">Relearn Dark</option>
+                      <option id="R-relearn-bright" value="relearn-bright">Relearn Bright</option>
+                      <option id="R-zen-auto" value="zen-auto">Zen Light/Dark</option>
+                      <option id="R-zen-light" value="zen-light">Zen Light</option>
+                      <option id="R-zen-dark" value="zen-dark">Zen Dark</option>
+                      <option id="R-neon" value="neon">Neon</option>
+                      <option id="R-learn" value="learn">Learn</option>
+                      <option id="R-blue" value="blue">Blue</option>
+                      <option id="R-green" value="green">Green</option>
+                      <option id="R-red" value="red">Red</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks showVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fas fa-history fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter">
+	    <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1701958914" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1701958914" defer></script>
+    <script src="/js/theme.js?1701958914" defer></script>
+  </body>
+</html>
